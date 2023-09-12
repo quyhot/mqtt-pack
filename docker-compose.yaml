@@ -14,6 +14,8 @@ services:
       - "8883:8883"
       - "8083:8083"
       - "8084:8084"
+    volumes:
+      - ./acl.conf:/opt/emqx/etc/acl.conf
     networks:
       emqx-bridge:
 #        aliases:

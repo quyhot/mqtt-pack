@@ -6,7 +6,7 @@ const mqttConfig = {
     password: process.env.MQTT_PASSWORD || 'a'
 }
 const clientConfig = {
-    clientId: 'r',
+    clientId: 'carpla_' + Math.random().toString(16).substring(2, 8),
     topic: process.env.MQTT_TOPIC || 'user/*',
     qos: process.env.MQTT_QOS || 1
 }
